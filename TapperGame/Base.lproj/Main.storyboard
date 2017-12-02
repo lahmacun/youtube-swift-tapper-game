@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3G5-Xm-oAr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main View Controller-->
+        <scene sceneID="UEP-1U-n1c">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="3G5-Xm-oAr" customClass="MainViewController" customModule="TapperGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c80-HX-OYx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cID-9V-skh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61n-Co-lif">
+                                <rect key="frame" x="132" y="316" width="110" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.53073128865204477" blue="0.90502062182741116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="En9-HW-e9t"/>
+                                    <constraint firstAttribute="width" constant="110" id="RsU-uN-zsY"/>
+                                </constraints>
+                                <state key="normal" title="Bana Tıkla">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="birakildiginda:" destination="3G5-Xm-oAr" eventType="touchDragOutside" id="Pi0-Er-ov7"/>
+                                    <action selector="buton:" destination="3G5-Xm-oAr" eventType="touchUpInside" id="s1b-M6-aQg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-aZ-3oi">
+                                <rect key="frame" x="0.0" y="50" width="375" height="52.5"/>
+                                <color key="tintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-md-gUw">
+                                <rect key="frame" x="119.5" y="316" width="135" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.53073128869999997" blue="0.90502062179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Tni-DN-JfM"/>
+                                    <constraint firstAttribute="width" constant="135" id="Zpg-bZ-B3R"/>
+                                </constraints>
+                                <state key="normal" title="Yeniden Başla">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="birakildiginda:" destination="3G5-Xm-oAr" eventType="touchDragOutside" id="cON-AG-9Zg"/>
+                                    <action selector="buton:" destination="3G5-Xm-oAr" eventType="touchUpInside" id="Y1O-Qr-YuX"/>
+                                    <action selector="restartGame:" destination="3G5-Xm-oAr" eventType="touchUpInside" id="8Nq-kY-iMw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="61n-Co-lif" firstAttribute="centerX" secondItem="c80-HX-OYx" secondAttribute="centerX" id="8wC-XS-Hjc"/>
+                            <constraint firstItem="cID-9V-skh" firstAttribute="bottom" secondItem="xbk-On-JgV" secondAttribute="bottom" id="HZU-7s-zKD"/>
+                            <constraint firstItem="cID-9V-skh" firstAttribute="top" secondItem="c80-HX-OYx" secondAttribute="top" id="JsK-iS-aTs"/>
+                            <constraint firstItem="YIj-aZ-3oi" firstAttribute="top" secondItem="c80-HX-OYx" secondAttribute="top" constant="50" id="KJn-5b-Su6"/>
+                            <constraint firstItem="cID-9V-skh" firstAttribute="leading" secondItem="xbk-On-JgV" secondAttribute="leading" id="Lmn-58-Cf3"/>
+                            <constraint firstItem="cID-9V-skh" firstAttribute="trailing" secondItem="xbk-On-JgV" secondAttribute="trailing" id="WGR-AT-990"/>
+                            <constraint firstItem="61n-Co-lif" firstAttribute="centerY" secondItem="c80-HX-OYx" secondAttribute="centerY" id="eIm-9N-MYC"/>
+                            <constraint firstItem="YIj-aZ-3oi" firstAttribute="leading" secondItem="xbk-On-JgV" secondAttribute="leading" id="g75-qF-VdR"/>
+                            <constraint firstItem="xbk-On-JgV" firstAttribute="trailing" secondItem="YIj-aZ-3oi" secondAttribute="trailing" id="j7J-FQ-GnL"/>
+                            <constraint firstItem="Zlf-md-gUw" firstAttribute="centerX" secondItem="c80-HX-OYx" secondAttribute="centerX" id="mrG-hH-A99"/>
+                            <constraint firstItem="Zlf-md-gUw" firstAttribute="centerY" secondItem="c80-HX-OYx" secondAttribute="centerY" id="qZq-mO-ib0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xbk-On-JgV"/>
                     </view>
+                    <connections>
+                        <outlet property="buton" destination="61n-Co-lif" id="DMf-lF-GoI"/>
+                        <outlet property="restartButton" destination="Zlf-md-gUw" id="9Rg-XP-WA9"/>
+                        <outlet property="yaziAlani" destination="YIj-aZ-3oi" id="faV-W5-u4f"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rU-Ab-eeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="134.48275862068968"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="900" height="900"/>
+    </resources>
 </document>

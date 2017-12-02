@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3114854D1FD28E880066E95D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3114854C1FD28E880066E95D /* MainViewController.swift */; };
 		312658BC1FD2212B00402A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312658BB1FD2212B00402A1C /* AppDelegate.swift */; };
 		312658BE1FD2212B00402A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312658BD1FD2212B00402A1C /* ViewController.swift */; };
 		312658C11FD2212B00402A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312658BF1FD2212B00402A1C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3114854C1FD28E880066E95D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		312658B81FD2212B00402A1C /* TapperGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapperGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		312658BB1FD2212B00402A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		312658BD1FD2212B00402A1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				312658C21FD2212B00402A1C /* Assets.xcassets */,
 				312658C41FD2212B00402A1C /* LaunchScreen.storyboard */,
 				312658C71FD2212B00402A1C /* Info.plist */,
+				3114854C1FD28E880066E95D /* MainViewController.swift */,
 			);
 			path = TapperGame;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3114854D1FD28E880066E95D /* MainViewController.swift in Sources */,
 				312658BE1FD2212B00402A1C /* ViewController.swift in Sources */,
 				312658BC1FD2212B00402A1C /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +280,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TapperGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.zahidefe.TapperGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TapperGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.zahidefe.TapperGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
